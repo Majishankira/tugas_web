@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="shortcut icon" href="./gambar/logo.png" type="image/x-icon">
+    <title>Valorant | Mizwar</title>
+</head>
+
+<body>
+    <div class="w3-black navbar">
+        <div class="navbar-kiri">
+            <button onclick="tema('Home')"><img src="./gambar/logo.png" width="50px"></button>
+            <button onclick="tema('GameModes')">Game Modes</button>
+            <button onclick="tema('Maps')">Maps</button>
+            <button onclick="tema('Weapons')">Weapons</button>
+            <button onclick="tema('Agents')">Agents</button>            
+        </div>
+        <div class="navbar-kanan">
+            <button onclick="tema('profile')"><i data-feather="user"></i></button>
+        </div>
+    </div>
+       
+        <div id="Home" class="w3-container kota">
+            <div class="div-btn" style="min-height: 40vh;">
+                <a href="#wrapper" class=" w3-animate-fading btn">More Info</a>
+            </div>
+            <section id="wrapper">
+                <p>VALORANT is a free-to-play first-person tactical shooter video game being developed and published by Riot Games.
+                    It was announced on October 15, 2019 under the codename "Project A", until it was officially revealed as VALORANT on March 2, 2020. It was officially released on June 2nd, 2020 for PC.
+                    VALORANT is a competitive tactical shooter from the first-person perspective. It takes place on a near-future Earth and features a cast of characters known as agents, each of which have their own unique set of abilities to create tactical opportunities.</p>
+                <div class="wrapper"> 
+                    <div class="gm"><img src="./gambar/Gamemodes.jpg" width="500px" height="auto" onclick="tema('GameModes')"></div>
+                    <div class="Maps"><img src="./gambar/Maps.png" width="500px" height="auto" onclick="tema('Maps')"></div>
+                    <div class="wp"><img src="./gambar/Weapons.png" width="500px" height="auto" onclick="tema('Weapons')"></div>
+                    <div class="Agents"><img src="./gambar/Agents.jpg" width="500px" height="auto" onclick="tema('Agents')"></div>
+                </div>                    
+            </section>
+        </div>
+
+        <div id="GameModes" class="w3-container kota w3-animate-top" style="display:none">
+            <center>
+                <table class="mode" border="2">
+                    <tr>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Unrated</td>
+                        <td><img src="./gambar/unrated.jpg" alt="" width="130px" class="w3-animate-left"></td>
+                        <td class="desc">Unrated is VALORANT's standard Plant/Defuse mode. Teams play 12 rounds on Attack or Defense,
+                            then swap to the other side for the next 12 rounds. The first to 13 rounds wins (Bo25),
+                            with a final Endgame round played should the game reach a 12-12 scoreline.</td>
+                    </tr>
+                    <tr>
+                        <td>Competitive</td>
+                        <td><img src="./gambar/Competitive.jpg" alt="" width="130px" class="w3-animate-right"></td>
+                        <td class="desc">Competitive is a higher stakes version of Unrated where you play competitively against other
+                            players to earn and compete for a rank. Should a game reach a 12-12 scoreline,
+                            the games instead goes into Overtime where the first
+                            team to get a 2-round lead on their opponent wins the game. Players can vote every two
+                            rounds on whether to continue Overtime, which can result in the game ending in a draw should enough players
+                            vote for this option.</td>
+                    </tr>
+                    <tr>
+                        <td>Swiftplay</td>
+                        <td><img src="./gambar/Swiftplay.jpg" alt="" width="130px" class="w3-animate-left"></td>
+                        <td class="desc">Swiftplay is a 5v5 Bo9 Plant/Defuse mode. It has most of the same gameplay rules as Unrated,
+                            but adapted for a shorter match length.</td>
+                    </tr>
+                    <tr>
+                        <td>Spike Rush</td>
+                        <td><img src="./gambar/Spike_Rush.jpg" alt="" width="130px" class="w3-animate-right"></td>
+                        <td class="desc">Spike Rush is a Bo7 5v5 mode where all players start each round with the same random
+                            weapon. Random orbs spawn around the map that players can collect to grant buff for themselves
+                            and/or their teammates or afflict enemies with debuffs.</td>
+                    </tr>
+                    <tr>
+                        <td>Deathmatch</td>
+                        <td><img src="./gambar/Deathmatch.jpg" alt="" width="130px" class="w3-animate-left"></td>
+                        <td class="desc">Deathmatch is a 12-player free-for-all game mode designed to allow players to hone their
+                            gunplay mechanics without abilities or warm up before playing Competitive. Players equip weapons
+                            of their choice and kill anyone in their way until either a player reaches 40 kills or 9 minutes
+                            have passed, at which point the game will end.</td>
+                    </tr>
+                    <tr>
+                        <td>Escalation</td>
+                        <td><img src="./gambar/Escalation.jpg" alt="" width="130px" class="w3-animate-right"></td>
+                        <td class="desc">Escalation is a 5v5 team deathmatch mode where players kill and race the enemy team through a 
+                            cycle of different weapons and abilities, advancing together as a team through Escalation levels.
+                            The first team to finish level 12, or the furthest along in 10 minutes, wins the game. Each level
+                            has a specific weapon or ability that the player is equipped with. Killing enemies grants points
+                            for the team that help to advance levels.</td>
+                    </tr>
+                    <tr>
+                        <td>Team Deathmatch</td>
+                        <td><img src="./gambar/Team_Deathmatch.jpg" alt="" width="130px" class="w3-animate-left"></td>
+                        <td class="desc">Team Deathmatch is a 5v5 team deathmatch mode where the first team to 100 kills wins.
+                            Players choose their loadouts based on the stage their team is at. Abilities regenerate over time
+                            instead of purchasing them with creds. There are Weapon Spawners throughout the map that
+                            give you weapons different from your loadout. Recovery Orbs appear throughout the map that
+                            recover the team's health and shield. Ultimate Orbs also appear to charge up a percentage of
+                            your Ultimate.</td>
+                    </tr>
+                    <tr>
+                        <td>Premier</td>
+                        <td><img src="./gambar/Premier.jpg" alt="" width="130px" class="w3-animate-right"></td>
+                        <td class="desc">Premier is a tournament mode currently in beta that uses the same in-game rules as
+                            Competitive, but with a focus on top-tier competition and playing together as one squad
+                            throughout a tournament structure, including additional features taken from pro play such as
+                            map pick/ban phases.</td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        
+        <div id="Maps" text-align="center" class="w3-container kota w3-animate-bottom" style="display:none">
+            <center>
+                <table class="map" border="2">
+                    <tr>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Minimap</th>
+                    </tr>
+                    <tr>
+                        <td class="type">Bind</td>
+                        <td><div class="w3-container"><img src="./gambar/Bind.jpg" alt="" width="700px" class="w3-animate-bottom"></div></td>
+                        <td><div class="w3-container"><img src="./gambar/Bind_minimap.jpg" alt="" width="700px"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="type">Haven</td>
+                        <td><div class="w3-container"><img src="./gambar/Haven.jpg" alt="" width="700px" class="w3-animate-bottom"></div></td>
+                        <td><div class="w3-container"><img src="./gambar/Haven_minimap.jpg" alt="" width="700px"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="type">Split</td>
+                        <td><div class="w3-container"><img src="./gambar/Split.jpg" alt="" width="700px" class="w3-animate-bottom"></div></td>
+                        <td><div class="w3-container"><img src="./gambar/Split_minimap.jpg" alt="" width="700px"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="type">Ascent</td>
+                        <td><div class="w3-container"><img src="./gambar/Ascent.jpg" alt="" width="700px" class="w3-animate-bottom"></div></td>
+                        <td><div class="w3-container"><img src="./gambar/Ascent_minimap.jpg" alt="" width="700px"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="type">Icebox</td>
+                        <td><div class="w3-container"><img src="./gambar/Icebox.jpg" alt="" width="700px" class="w3-animate-bottom"></div></td>
+                        <td><div class="w3-container"><img src="./gambar/Icebox_minimap.jpg" alt="" width="700px"></div></td>
+                    </tr>  
+                    <tr>
+                        <td class="type">Breeze</td>
+                        <td><div class="w3-container"><img src="./gambar/Breeze.jpg" alt="" width="700px" class="w3-animate-bottom"></div></td>
+                        <td><div class="w3-container"><img src="./gambar/Breeze_minimap.jpg" alt="" width="700px"></div></td>
+                    </tr> 
+                    <tr>
+                        <td class="type">Fracture</td>
+                        <td><div class="w3-container"><img src="./gambar/Fracture.jpg" alt="" width="700px" class="w3-animate-bottom"></div></td>
+                        <td><div class="w3-container"><img src="./gambar/Fracture_minimap.jpg" alt="" width="700px"></div></td>
+                    </tr>                            
+                    <tr>
+                        <td class="type">Pearl</td>
+                        <td><div class="w3-container"><img src="./gambar/Pearl.jpg" alt="" width="700px" class="w3-animate-bottom"></div></td>
+                        <td><div class="w3-container"><img src="./gambar/Pearl_minimap.jpg" alt="" width="700px"></div></td>
+                    </tr> 
+                    <tr>
+                        <td class="type">Lotus</td>
+                        <td><div class="w3-container"><img src="./gambar/Lotus.jpg" alt="" width="700px" class="w3-animate-bottom"></div></td>
+                        <td><div class="w3-container"><img src="./gambar/Lotus_minimap.jpg" alt="" width="700px"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="type">Sunset</td>
+                        <td><div class="w3-container"><img src="./gambar/Sunset.jpg" alt="" width="700px" class="w3-animate-bottom"></div></td>
+                        <td><div class="w3-container"><img src="./gambar/Sunset_minimap.jpg" alt="" width="700px"></div></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        
+        <div id="Weapons" class="w3-container kota w3-animate-top" style="display:none">
+            <center>
+                <table class="weapons" border="1">
+                    <tr>
+                        <th>Type</th>
+                        <th colspan="5">Name</th>
+                    </tr>
+                    <tr>
+                        <td class="type">Sidearms</td>
+                        <td><div class="w3-container"><img src="./gambar/Classic.jpg" alt="" width="200px" class="w3-animate-zoom">Classic</div></td>
+                        <td><div class="w3-container"><img src="./gambar/Shorty.jpg" alt="" width="300px" class="w3-animate-zoom">Shorty</div></td>    
+                        <td><div class="w3-container"><img src="./gambar/Frenzy.jpg" alt="" width="210px" class="w3-animate-zoom">Frenzy</div></td>                        
+                        <td><div class="w3-container"><img src="./gambar/Ghost.jpg" alt="" width="300px" class="w3-animate-zoom">Ghost</div></td>
+                        <td><div class="w3-container"><img src="./gambar/Sheriff.jpg" alt="" width="300px" class="w3-animate-zoom">Sheriff</div></td>                       
+                    </tr>                
+                    <tr>
+                        <td class="type">SMGs</td>
+                        <td><div class="w3-container"><img src="./gambar/Stinger.jpg" alt="" width="300px" class="w3-animate-zoom">Stinger</div></td>
+                        <td><div class="w3-container"><img src="./gambar/Spectre.jpg" alt="" width="300px" class="w3-animate-zoom">Spectre</div></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="type">Shotguns</td>
+                        <td><div class="w3-container"><img src="./gambar/Bucky.jpg" alt="" width="300px" class="w3-animate-zoom">Bucky</div></td>
+                        <td><div class="w3-container"><img src="./gambar/Judge.jpg" alt="" width="300px" class="w3-animate-zoom">Judge</div></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> 
+                    </tr>
+                    <tr>
+                        <td class="type">Rifles</td>
+                        <td><div class="w3-container"><img src="./gambar/Bulldog.jpg" alt="" width="300px" class="w3-animate-zoom">Bulldog</div></td>
+                        <td><div class="w3-container"><img src="./gambar/Guardian.jpg" alt="" width="300px" class="w3-animate-zoom">Guardian</div></td>    
+                        <td><div class="w3-container"><img src="./gambar/Phantom.jpg" alt="" width="300px" class="w3-animate-zoom">Phantom</div></td>                        
+                        <td><div class="w3-container"><img src="./gambar/Vandal.jpg" alt="" width="300px" class="w3-animate-zoom">Vandal</div></td>
+                        <td></td>                  
+                    </tr>
+                    <tr>
+                        <td class="type">Sniper Rifles</td>
+                        <td><div class="w3-container"><img src="./gambar/Marshal.jpg" alt="" width="300px" class="w3-animate-zoom">Marshal</div></td>
+                        <td><div class="w3-container"><img src="./gambar/Outlaw.jpg" alt="" width="300px" class="w3-animate-zoom">Outlaw</div></td>    
+                        <td><div class="w3-container"><img src="./gambar/Operator.jpg" alt="" width="300px" class="w3-animate-zoom">Operator</div></td>
+                        <td></td>
+                        <td></td>                                       
+                    </tr>
+                    <tr>
+                        <td class="type">Machine Guns</td>
+                        <td><div class="w3-container"><img src="./gambar/Ares.jpg" alt="" width="300px" class="w3-animate-zoom">Ares</div></td>
+                        <td><div class="w3-container"><img src="./gambar/Odin.jpg" alt="" width="300px" class="w3-animate-zoom">Odin</div></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> 
+                    </tr>
+                </table>
+            </center>
+        </div>         
+
+        <div style="display: none;" class="w3-animate-opacity kota" id="Agents">
+            <div class="agentwrapper">
+                <img src="./gambar/Duelist.jpg" width="250px" height="auto" onclick="hero('Duelists')"> 
+                <img src="./gambar/Controller.jpg" width="250px" height="auto" onclick="hero('Controllers')">
+                <img src="./gambar/Initiator.jpg" width="250px" height="auto" onclick="hero('Initiators')">
+                <img src="./gambar/Sentinel.jpg" width="250px" height="auto" onclick="hero('Sentinels')">
+            </div>
+            <section id="hero">
+                <div id="Duelists" class="hero w3-animate-zoom" style="display:none">
+                    <div class="smoke">
+                        <div class="duelistwrapper">
+                            <h2>Iso</h2>
+                            <img src="./gambar/Iso.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="duelistwrapper">
+                            <h2>Jett</h2>
+                            <img src="./gambar/Jett.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="duelistwrapper">
+                            <h2>Neon</h2>
+                            <img src="./gambar/Neon.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="duelistwrapper">
+                            <h2>Phoenix</h2>
+                            <img src="./gambar/Phoenix.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="duelistwrapper">
+                            <h2>Raze</h2>
+                            <img src="./gambar/Raze.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="duelistwrapper">
+                            <h2>Reyna</h2>
+                            <img src="./gambar/Reyna.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="duelistwrapper">
+                            <h2>Yoru</h2>
+                            <img src="./gambar/Yoru.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Controllers" class="hero w3-animate-zoom" style="display:none">
+                    <div class="smoke">
+                        <div class="controllerwrapper">
+                            <h2>Astra</h2>
+                            <img src="./gambar/Astra.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="controllerwrapper">
+                            <h2>Brimstone</h2>
+                            <img src="./gambar/Brimstone.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="controllerwrapper">
+                            <h2>Harbor</h2>
+                            <img src="./gambar/Harbor.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="controllerwrapper">
+                            <h2>Omen</h2>
+                            <img src="./gambar/Omen.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="controllerwrapper">
+                            <h2>Viper</h2>
+                            <img src="./gambar/Viper.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Initiators" class="hero w3-animate-zoom" style="display:none">
+                    <div class="smoke">
+                        <div class="initiatorwrapper">
+                            <h2>Breach</h2>
+                            <img src="./gambar/Breach.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="initiatorwrapper">
+                            <h2>Fade</h2>
+                            <img src="./gambar/Fade.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="initiatorwrapper">
+                            <h2>Gekko</h2>
+                            <img src="./gambar/Gekko.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="initiatorwrapper">
+                            <h2>KAY/O</h2>
+                            <img src="./gambar/KAYO.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="initiatorwrapper">
+                            <h2>Skye</h2>
+                            <img src="./gambar/Skye.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="initiatorwrapper">
+                            <h2>Sova</h2>
+                            <img src="./gambar/Sova.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Sentinels" class="hero w3-animate-zoom" style="display:none">
+                    <div class="smoke">
+                        <div class="sentinelwrapper">
+                            <h2>Chamber</h2>
+                            <img src="./gambar/Chamber.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="sentinelwrapper">
+                            <h2>Cypher</h2>
+                            <img src="./gambar/Cypher.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="sentinelwrapper">
+                            <h2>Deadlock</h2>
+                            <img src="./gambar/Deadlock.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="sentinelwrapper">
+                            <h2>Killjoy</h2>
+                            <img src="./gambar/Killjoy.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                        <div class="sentinelwrapper">
+                            <h2>Sage</h2>
+                            <img src="./gambar/Sage.jpg" alt="" width="300px" class="w3-animate-zoom">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="profile" class="kota" style="display: none;">
+            <div class="aing">
+                <img src="./gambar/me.jpg" alt="" width="300px">
+                <h2>Muhammad Mizwar Dermawan</h2>
+                <p>10123249</p>
+                <p>IF 6</p>
+                <a href="https://www.instagram.com/mzwargsi/"><i data-feather="instagram"></i></a>
+            </div>
+        </div>
+
+        <script src="./function.js"></script>
+        <script>
+            feather.replace();
+          </script>
+</body>
+</html>
